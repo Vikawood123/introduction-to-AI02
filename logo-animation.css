@@ -1,0 +1,278 @@
+/* ===== СТИЛИ АНИМИРОВАННОГО ЛОГОТИПА ===== */
+
+/* Контейнер логотипа в шапке */
+#logoContainer {
+    width: 250px;
+    height: 120px;
+    position: relative;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Основной враппер */
+.logo-wrapper {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.95), rgba(20, 40, 70, 0.95));
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    box-shadow: 
+        0 4px 15px rgba(0, 40, 150, 0.4),
+        inset 0 0 20px rgba(0, 150, 255, 0.1);
+    border: 1px solid rgba(0, 150, 255, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Верхняя часть */
+.logo-top {
+    text-align: center;
+    margin-bottom: 8px;
+    z-index: 2;
+}
+
+#cityText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-shadow: 
+        0 0 8px #0066ff,
+        0 0 16px #0066ff,
+        0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4px;
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+    line-height: 1.1;
+}
+
+#subtitleText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #ffcc00;
+    text-shadow: 0 0 6px #ff9900;
+    opacity: 0;
+    transform: translateY(10px);
+    line-height: 1.1;
+}
+
+/* Символ/эмблема */
+.logo-symbol {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 6px 0;
+    z-index: 2;
+}
+
+.symbol-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00ccff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 12px #00ccff,
+        inset 0 0 12px #00ccff;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.symbol-gear {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gear {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 30%, #ff3366 30%);
+    clip-path: polygon(
+        50% 50%,
+        80% 10%,
+        90% 20%,
+        80% 50%,
+        90% 80%,
+        80% 90%,
+        50% 80%,
+        20% 90%,
+        10% 80%,
+        20% 50%,
+        10% 20%,
+        20% 10%
+    );
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+.gear.small {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    background: radial-gradient(circle, transparent 30%, #33cc33 30%);
+    transform: rotate(30deg);
+}
+
+.symbol-star {
+    position: absolute;
+    font-size: 18px;
+    color: #ffff00;
+    text-shadow: 0 0 10px #ff9900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+/* Нижняя часть */
+.logo-bottom {
+    text-align: center;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+#techText {
+    font-size: 0.7rem;
+    color: #66ff99;
+    letter-spacing: 0.6px;
+    margin-bottom: 3px;
+    opacity: 0;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+#yearText {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff6699;
+    text-shadow: 0 0 6px #ff3366;
+    opacity: 0;
+    line-height: 1.1;
+}
+
+/* Световые лучи (скрыты в шапке) */
+.light-ray {
+    display: none !important;
+}
+
+/* ===== АНИМАЦИИ ===== */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateGear {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes starPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+@keyframes glowPulse {
+    0%, 100% { 
+        box-shadow: 
+            0 0 12px #00ccff,
+            inset 0 0 12px #00ccff;
+    }
+    50% { 
+        box-shadow: 
+            0 0 18px #00ccff,
+            inset 0 0 18px #00ccff;
+    }
+}
+
+@keyframes pulseShadow {
+    0%, 100% { 
+        box-shadow: 
+            0 4px 15px rgba(0, 40, 150, 0.4),
+            inset 0 0 20px rgba(0, 150, 255, 0.1);
+    }
+    50% { 
+        box-shadow: 
+            0 6px 20px rgba(0, 60, 200, 0.5),
+            inset 0 0 25px rgba(0, 180, 255, 0.15);
+    }
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+    #logoContainer {
+        width: 220px;
+        height: 110px;
+    }
+    
+    #cityText {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+    
+    #subtitleText {
+        font-size: 0.8rem;
+        letter-spacing: 0.6px;
+    }
+    
+    .logo-symbol {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .symbol-star {
+        font-size: 16px;
+    }
+    
+    #techText {
+        font-size: 0.65rem;
+    }
+    
+    #yearText {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #logoContainer {
+        width: 200px;
+        height: 100px;
+        margin: 0 auto 15px;
+    }
+    
+    #cityText {
+        font-size: 1.2rem;
+    }
+    
+    #subtitleText {
+        font-size: 0.75rem;
+    }
+    
+    .logo-symbol {
+        width: 30px;
+        height: 30px;
+    }
+}
