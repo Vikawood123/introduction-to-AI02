@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ в Люберецком техникуме: От обучения к практике</title>
+    
+    <!-- ПОДКЛЮЧЕНИЕ ВСЕХ СТИЛЕЙ -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo-animation.css"> <!-- ТОЛЬКО ОДИН РАЗ! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Хедер (Шапка) -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Логотип Техникума - НОВЫЙ АНИМИРОВАННЫЙ -->
+            <div class="logo-overlay" id="logoContainer">
+                <div class="logo-wrapper">
+                    <div class="logo-top">
+                        <div class="city-name" id="cityText">ЛЮБЕРЦЫ!</div>
+                        <div class="city-subtitle" id="subtitleText">ЛЮБЕРЕЦКИЙ ТЕХНИКУМ</div>
+                    </div>
+                    
+                    <div class="logo-symbol">
+                        <div class="symbol-circle"></div>
+                        <div class="symbol-gear">
+                            <div class="gear"></div>
+                            <div class="gear small"></div>
+                        </div>
+                        <div class="symbol-star">★</div>
+                    </div>
+                    
+                    <div class="logo-bottom">
+                        <div class="tech-line" id="techText">Технологии • Образование • Будущее</div>
+                        <div class="year" id="yearText">2025</div>
+                    </div>
+                    
+                    <div class="light-ray ray1"></div>
+                    <div class="light-ray ray2"></div>
+                    <div class="light-ray ray3"></div>
+                </div>
+            </div>
+
+            <!-- Название проекта и слоган -->
+            <div class="header-text">
+                <h1 class="project-title">«ИИ в Люберецком техникуме: От обучения к практике»</h1>
+                <p class="slogan">Осень 2025: Результаты внедрения искусственного интеллекта в учебный процесс</p>
+            </div>
+
+            <!-- Меню -->
+            <nav class="navigation">
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Главная</a></li>
+                    <li><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li><a href="#courses" class="nav-link">Курсы</a></li>
+                    <li><a href="#results" class="nav-link">Результаты</a></li>
+                    <li><a href="#plans" class="nav-link">Планы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section id="hero" class="hero-banner">
+        <div class="container banner-container">
+            <div class="banner-content">
+                <h2>Внедрение искусственного интеллекта</h2>
+                <h1>в учебный процесс техникума</h1>
+                <p>Практические результаты осени 2025 года. От обучения к реальным проектам.</p>
+                <a href="#results" class="banner-btn">Смотреть отчет</a>
+            </div>
+            <div class="banner-media">
+    <div class="media-placeholder">
+        <img src="images/students.png" alt="Лаборатория ИИ в Люберецком техникуме" class="media-photo">
+        <div class="photo-caption">
+            <p>Видео с открытия лаборатории ИИ</p>
+            <small>Группа студентов за компьютерами, работа с моделями ИИ</small>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section id="courses" class="section code-future">
+    <div class="courses-grid-with-center">
+    <!-- Левая карточка -->
+    <div class="course-card">
+        <div class="course-logo">
+            <i class="fab fa-python"></i>
+        </div>
+        <h3>Разработчик ИИ-чат-ботов на Python</h3>
+        <p>От основ до создания виртуальных ассистентов</p>
+        <div class="course-provider">Госуслуги</div>
+        <a href="https://www.gosuslugi.ru/ai/29148?view=online" target="_blank" class="course-link">Перейти к курсу</a>
+    </div>
+    <!-- Третий курс снизу -->
+<div class="bottom-course">
+    <div class="course-card">
+        <div class="course-logo">
+            <i class="fas fa-eye"></i>
+        </div>
+        <h3>Наглядные основы искусственного интеллекта</h3>
+        <p>Визуальное изучение принципов работы ИИ</p>
+        <div class="course-provider">Госуслуги </div>
+        <a href="https://www.gosuslugi.ru/ai/29218?view=online" target="_blank" class="course-link">Перейти к курсу</a>
+    </div>
+</div>
+    
+    
+    <!-- Правая карточка -->
+    <div class="course-card">
+        <div class="course-logo">
+            <i class="fas fa-brain"></i>
+        </div>
+        <h3>НейроСтарт - программирование и ИИ на Python</h3>
+        <p>Основы нейросетей и машинного обучения</p>
+        <div class="course-provider">Госуслуги</div>
+        <a href="https://www.gosuslugi.ru/ai/29190?view=online" target="_blank" class="course-link">Перейти к курсу</a>
+    </div>
+</div>
+
+<!-- Центральный блок -->
+    <div class="center-achievements">
+        <div class="achievements-card">
+            
+            
+            
+            
+            <div class="certificate-square-section">
+    <!-- Заголовок -->
+    <h3 class="section-title">Сертификат проекта "Наглядные основы искусственного интеллекта" </h3>
+    
+    <!-- Квадратный контейнер для сертификата -->
+    <div class="certificate-square-container">
+        <div class="certificate-wrapper">
+            <!-- Кликабельное изображение сертификата -->
+            <div class="certificate-square" onclick="openCertificateFullscreen('images/certificate-code-future.jpg')">
+                <!-- Предпросмотр сертификата -->
+                <div class="certificate-preview">
+                    <img src="images/certificate-code-future.jpg" alt="Сертификат Школа программистов" class="certificate-img">
+                   
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навыки рядом с сертификатом -->
+        <div class="skills-sidebar">
+            <h4><i class="fas fa-trophy"></i> Приобретенные навыки:</h4>
+            <div class="skills-list-square">
+                <div class="skill-item-square">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h5>Создание ИИ-ботов</h5>
+                        <p>Разработка интеллектуальных чат-ассистентов</p>
+                    </div>
+                </div>
+                
+                <div class="skill-item-square">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h5>Работа с нейросетями</h5>
+                        <p>Понимание принципов машинного обучения</p>
+                    </div>
+                </div>
+                
+                <div class="skill-item-square">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h5>Программирование на Python</h5>
+                        <p>Практическое применение языка для ИИ</p>
+                    </div>
+                </div>
+                
+                <div class="skill-item-square">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h5>Интеграция ИИ в проекты</h5>
+                        <p>Внедрение ИИ-решений в реальные системы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Полноэкранный просмотр сертификата -->
+<div id="certificateModal" class="modal-overlay" onclick="closeCertificateModal()">
+    <div class="modal-content-square">
+        <button class="modal-close" onclick="closeCertificateModal()">&times;</button>
+        <img src="" alt="Сертификат" id="certificateFull">
+        <div class="modal-info">
+            <h4>Сертификат АНО ДО «Школа программистов»</h4>
+            <p>Программа: «Разработчик ИИ-чат-ботов на Python: от основ до своих виртуальных ассистентов»</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- Модальное окно для полноэкранного просмотра (разместить перед </body>) -->
+<div class="modal-overlay" id="imageModal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <img src="" alt="" class="modal-img" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+</div>
+
+    <!-- Блок 2: Вендорские курсы и лаборатория -->
+    <section class="section vendor-courses">
+        <!-- Обновленный блок вендорских курсов -->
+<div class="vendors-section">
+    <h3 class="section-subtitle">В рамках проекта студенты прошли курсы от ведущих IT-компаний</h3>
+    
+    <div class="vendors-with-certificates">
+        <!-- Яндекс -->
+        <div class="vendor-platform">
+            <div class="vendor-header">
+                <a href="https://education.yandex.ru/" target="_blank" class="vendor-link">
+                    <div class="vendor-icon">
+                        <i class="fab fa-yandex"></i>
+                    </div>
+                    <h4 class="vendor-name">Яндекс</h4>
+                </a>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-preview">
+                    <img src="images/cert-yandex.jpg" alt="Сертификат Яндекс" class="certificate-img">
+                    <div class="certificate-overlay">
+                        <a href="images/cert-yandex-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="certificate-desc">Наглядные основы ИИ</p>
+            </div>
+        </div>
+        
+        <!-- VK Education -->
+        <div class="vendor-platform">
+            <div class="vendor-header">
+                <a href="https://vk.company/ru/company/education/" target="_blank" class="vendor-link">
+                    <div class="vendor-icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <h4 class="vendor-name">VK Education</h4>
+                </a>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-preview">
+                    <img src="images/cert-vk.jpg" alt="Сертификат VK" class="certificate-img">
+                    <div class="certificate-overlay">
+                        <a href="images/cert-vk-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="certificate-desc">Новые медиа: SMM</p>
+            </div>
+        </div>
+        
+        <!-- СберУниверситет -->
+        <div class="vendor-platform">
+            <div class="vendor-header">
+                <a href="https://sberuniversity.ru/" target="_blank" class="vendor-link">
+                    <div class="vendor-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h4 class="vendor-name">СберУниверситет</h4>
+                </a>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-preview">
+                    <img src="images/cert-sber.jpg" alt="Сертификат Сбер" class="certificate-img">
+                    <div class="certificate-overlay">
+                        <a href="images/cert-sber-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="certificate-desc">Генеративное искусство</p>
+            </div>
+        </div>
+        
+        <!-- 1С:Образование -->
+        <div class="vendor-platform">
+            <div class="vendor-header">
+                <a href="https://edu.1c.ru/" target="_blank" class="vendor-link">
+                    <div class="vendor-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h4 class="vendor-name">1С:Образование</h4>
+                </a>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-preview">
+                    <img src="images/cert-1c.jpg" alt="Сертификат 1С" class="certificate-img">
+                    <div class="certificate-overlay">
+                        <a href="images/cert-1c-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="certificate-desc">Основы программирования</p>
+            </div>
+        </div>
+        
+        <!-- Stepik -->
+        <div class="vendor-platform">
+            <div class="vendor-header">
+                <a href="https://stepik.org/" target="_blank" class="vendor-link">
+                    <div class="vendor-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="vendor-name">Stepik</h4>
+                </a>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-preview">
+                    <img src="images/cert-stepik.jpg" alt="Сертификат Stepik" class="certificate-img">
+                    <div class="certificate-overlay">
+                        <a href="images/cert-stepik-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="certificate-desc">Введение в ИИ</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Блок 3: Проект «Модель цифрового производства» -->
+    <section id="projects" class="section digital-production">
+        <div class="container">
+            <h2 class="section-title"> Модель цифрового производства </h2>
+            <p class="section-subtitle"> <h3>Что такое Модель цифрового производства?</h3>
+                    <p>Это практический проект по созданию интеллектуальной системы, которая автоматизирует контроль безопасности, мониторинг оборудования и управление производственными процессами с использованием компьютерного зрения и нейросетей.</p> </p>
+            
+            <div class="project-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">студентов обучено</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">курс</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">09.02.07</div>
+                    <div class="stat-label">специальность</div>
+                </div>
+            </div>
+            
+            <div class="technologies-section">
+    <h3>Используемые технологии</h3>
+    <div class="technologies-grid">
+        <div class="tech-card">
+            <a href="https://roboflow.com/" target="_blank" class="tech-link">
+                <div class="tech-logo">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h4>Roboflow</h4>
+                <p>Создание датасетов и обучение моделей компьютерного зрения</p>
+            </a>
+        </div>
+        
+        <div class="tech-card">
+            <a href="https://colab.research.google.com/" target="_blank" class="tech-link">
+                <div class="tech-logo">
+                    <i class="fab fa-google"></i>
+                </div>
+                <h4>Google Colab</h4>
+                <p>Облачная среда для разработки и запуска моделей ИИ</p>
+            </a>
+        </div>
+        
+        <div class="tech-card">
+            <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="tech-link">
+                <div class="tech-logo">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h4>PyCharm</h4>
+                <p>Профессиональная среда разработки на Python</p>
+            </a>
+        </div>
+        
+        <div class="tech-card">
+            <a href="https://unity.com/" target="_blank" class="tech-link">
+                <div class="tech-logo">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h4>Unity</h4>
+                <p>Создание интерактивных 3D-демонстраций</p>
+            </a>
+        </div>
+        
+    </div>
+            
+           <div class="modules-section">
+    <h3>Реализованные модули</h3>
+    <div class="modules-grid">
+    <div class="module-card">
+        <h4>Контроль СИЗ</h4>
+        <p>Автоматическое распознавание средств индивидуальной защиты</p>
+        <div class="module-image-placeholder">
+            <div class="image-container">
+                <!-- ВСТАВЬТЕ КАРТИНКУ ЗДЕСЬ -->
+                <img src="images/module-siz.jpg" alt="Контроль СИЗ" class="module-img">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="module-card">
+        <h4>Мониторинг опасных зон</h4>
+        <p>Обнаружение и контроль доступа в опасные зоны</p>
+        <div class="module-image-placeholder">
+            <div class="image-container">
+                <!-- ВСТАВЬТЕ КАРТИНКУ ЗДЕСЬ -->
+                <img src="images/module-danger.jpg" alt="Мониторинг опасных зон" class="module-img">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="module-card">
+        <h4>Распознавание объектов</h4>
+        <p>Идентификация товаров и оборудования на складе</p>
+        <div class="module-image-placeholder">
+            <div class="image-container">
+                <!-- ВСТАВЬТЕ КАРТИНКУ ЗДЕСЬ -->
+                <img src="images/module-objects.jpg" alt="Распознавание объектов" class="module-img">
+                
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    
+    
+    
+    <div class="unity-demo">
+        <a href="https://drive.google.com/file/d/1EVwQ1xVneW_zeMYH5qpSM_yazkJWfwOE/view?usp=drivesdk" target="_blank" class="unity-link">
+            <i class="fas fa-external-link-alt"></i>
+            Ссылка на демо-сцену Unity
+        </a>
+    </div>
+</div>
+            
+            <div class="applications-section">
+    <h3>Места практического применения</h3>
+    <p class="applications-subtitle">Предприятия-партнеры, где могут применяться разработанные ИИ-модули</p>
+    
+    <div class="applications-cards">
+        <!-- Карточка 1: Розничные сети -->
+        <div class="application-card">
+            <div class="app-image">
+                <img src="images/retai-warehouse.jpg" alt="Склад ритейла">
+                <div class="app-badge">Розничные сети</div>
+            </div>
+            <div class="app-content">
+                <div class="app-header">
+                    <div class="app-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="app-organizations">
+                        <h4>Розничные сети</h4>
+                        <p class="org-list">ООО "Дрогери Ритейл"<br>ООО "Спорт Поинт"</p>
+                    </div>
+                </div>
+                <div class="app-applications">
+                    <h5>Применение ИИ:</h5>
+                    <ul class="app-list">
+                        <li>Автоматический учет товаров на складе</li>
+                        <li>Распознавание товаров по штрих-кодам и изображениям</li>
+                        <li>Контроль остатков и пополнение запасов</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Карточка 2: ГИБДД -->
+        <div class="application-card">
+            <div class="app-image">
+                <img src="images/traffic-police.jpg" alt="ГИБДД контроль">
+                <div class="app-badge">Госавтоинспекция</div>
+            </div>
+            <div class="app-content">
+                <div class="app-header">
+                    <div class="app-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="app-organizations">
+                        <h4>Госавтоинспекция</h4>
+                        <p class="org-list">МУ МВД России «Люберецкое»</p>
+                    </div>
+                </div>
+                <div class="app-applications">
+                    <h5>Применение ИИ:</h5>
+                    <ul class="app-list">
+                        <li>Анализ видеозаписей с дорожных камер</li>
+                        <li>Автоматическая детекция СИЗ у сотрудников</li>
+                        <li>Распознавание номерных знаков и нарушений</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Карточка 3: Логистические компании -->
+        <div class="application-card">
+            <div class="app-image">
+                <img src="images/retail-warehouse.jpg" alt="Логистический склад">
+                <div class="app-badge">Логистика</div>
+            </div>
+            <div class="app-content">
+                <div class="app-header">
+                    <div class="app-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <div class="app-organizations">
+                        <h4>Логистические компании</h4>
+                        <p class="org-list">ООО "Система Пбо"<br>ООО "ИСП Логистик"</p>
+                    </div>
+                </div>
+                <div class="app-applications">
+                    <h5>Применение ИИ:</h5>
+                    <ul class="app-list">
+            
+                        <li>Контроль погрузки/выгрузки грузов</li>
+                        <li>Мониторинг состояния товаров</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Сноска -->
+    <div class="applications-note">
+        <i class="fas fa-info-circle"></i>
+        <p>Все указанные предприятия являются потенциальными площадками для внедрения разработанных студентами модулей ИИ и проведения производственной практики.</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Блок 4: Планы на весенний семестр -->
+    <section id="plans" class="section future-plans">
+        <div class="container">
+    <div class="future-plans-header">
+        <h2 class="section-title">Что ждет нас впереди?</h2>
+        <p class="section-subtitle">Планы на весенний семестр 2026 года</p>
+    </div>
+    
+    <!-- Блок с специальностями -->
+    <div class="specialties-plans-grid">
+        <div class="specialty-plan-card">
+            <div class="specialty-content">
+                <div class="specialty-badge">
+                    <span class="specialty-code">54.02.20</span>
+                </div>
+                <h3 class="specialty-title">Графический дизайн</h3>
+                <p class="specialty-description">Внедрение ИИ в создание визуального контента и дизайн-проекты</p>
+                
+                <!-- Фото для графического дизайна -->
+                <div class="specialty-photo">
+                    <img src="images/graphic-design-ai.jpg" alt="ИИ в графическом дизайне">
+                    <a href="images/graphic-design-ai-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    <div class="photo-caption">Генерация дизайна с помощью ИИ</div>
+                </div>
+                
+                <div class="specialty-features">
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <span>Генеративное искусство</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-image"></i>
+                        <span>Автодизайн логотипов</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-video"></i>
+                        <span>Создание анимаций</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="specialty-plan-card">
+            <div class="specialty-content">
+                <div class="specialty-badge">
+                    <span class="specialty-code">12.01.09</span>
+                </div>
+                <h3 class="specialty-title">Оптика и фототехника</h3>
+                <p class="specialty-description">Расширение программы обучения с применением ИИ для обработки изображений</p>
+                
+                <!-- Фото для оптики -->
+                <div class="specialty-photo">
+                    <img src="images/optics-ai.jpg" alt="ИИ в оптике и фототехнике">
+                    <a href="images/optics-ai-full.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    <div class="photo-caption">Анализ оптических изображений</div>
+                </div>
+                
+                <div class="specialty-features">
+                    <div class="feature">
+                        <i class="fas fa-camera"></i>
+                        <span>Обработка фото ИИ</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-eye"></i>
+                        <span>Компьютерное зрение</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-microscope"></i>
+                        <span>Анализ оптики</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Блок с документами -->
+    <div class="plans-documents-section">
+        <div class="documents-header">
+            <h3><i class="fas fa-folder-open"></i> Документы и планы</h3>
+            <p class="documents-subtitle">Организационные материалы для развития проекта</p>
+        </div>
+        
+        <div class="documents-cards">
+            <div class="document-card">
+                <div class="document-icon pending">
+                    <i class="fas fa-file-word"></i>
+                </div>
+                <h4>План развития проекта</h4>
+                <p>Дорожная карта внедрения ИИ на 2026 год</p>
+                <a href="https://docs.google.com/document/d/1p7ECBEYM9EfduBPDuZ1Ey5lssHVXzZcbcDkYgwKGEXE/edit" 
+                   target="_blank" class="document-link">
+                    <i class="fas fa-external-link-alt"></i> Открыть документ
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="document-icon completed">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h4>Учебные материалы</h4>
+                <p>Конспекты, методички и практические задания</p>
+                <a href="https://docs.google.com/document/d/1W2WyTLPAH46194Hth3akSoaocMRV3nwLb5SysAl2x68/edit" 
+                   target="_blank" class="document-link">
+                    <i class="fas fa-external-link-alt"></i> Открыть документ
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="document-icon pending">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h4>Инструменты и технологии</h4>
+                <p>Список ПО и оборудования для обучения</p>
+                <a href="https://docs.google.com/document/d/1s-DzxfknGQelg0Tf5zDCpuZQ1z5WKaz5xkYwZxehnBc/edit" 
+                   target="_blank" class="document-link">
+                    <i class="fas fa-external-link-alt"></i> Открыть документ
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Блок 5: Дополнительные ресурсы и идеи -->
+<section id="results" class="section resources">
+    <div class="container">
+        <div class="resources-header">
+            <h2 class="section-title">Развиваемся вместе: Полезные материалы</h2>
+            <p class="section-subtitle">Видеозаписи вебинаров, методические материалы и скриншоты для обучения</p>
+        </div>
+        
+        <div class="resources-grid">
+            <!-- Левая колонка: Вебинары -->
+            <div class="webinars-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-video"></i> Вебинары и обучающие материалы</h3>
+                    <p class="section-description">Записи онлайн-мероприятий по цифровизации образования</p>
+                </div>
+                
+                <div class="webinars-list">
+                    <!-- Вебинар 1 -->
+                    <div class="webinar-item">
+                        <div class="webinar-date-badge">17.12.2025</div>
+                        <div class="webinar-content">
+                            <h4 class="webinar-title">Подведение итогов работы "Цифровой мастерской преподавателя СПО"</h4>
+                            <div class="webinar-links">
+                                <a href="https://vkvideo.ru/playlist/-224889946_17" target="_blank" class="video-link">
+                                    <i class="fas fa-play-circle"></i> Смотреть запись
+                                </a>
+                               
+                                     
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Вебинар 2 -->
+                    <div class="webinar-item">
+                        <div class="webinar-date-badge">03.12.2025</div>
+                        <div class="webinar-content">
+                            <h4 class="webinar-title">Возможности федерального мессенджера MAX в образовании</h4>
+                            <div class="webinar-links">
+                                <a href="https://vkvideo.ru/playlist/-224889946_17" target="_blank" class="video-link">
+                                    <i class="fas fa-play-circle"></i> Смотреть запись
+                                </a>
+                                
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Вебинар 3 -->
+                    <div class="webinar-item">
+                        <div class="webinar-date-badge">19.11.2025</div>
+                        <div class="webinar-content">
+                            <h4 class="webinar-title">Создание инфографики и презентаций с помощью ИИ</h4>
+                            <div class="webinar-links">
+                                <a href="https://vkvideo.ru/playlist/-224889946_17" target="_blank" class="video-link">
+                                    <i class="fas fa-play-circle"></i> Смотреть запись
+                                </a>
+                                
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="all-videos-link">
+                    <a href="https://vk.com/videos-224889946?section=album_17" target="_blank" class="all-videos-btn">
+                        <i class="fas fa-list"></i> Все записи вебинаров
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Правая колонка: Методики -->
+            <div class="methodics-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-book-open"></i> Методические материалы</h3>
+                    <p class="section-description">Руководства и инструкции для внедрения ИИ</p>
+                </div>
+                
+                <div class="methodics-grid">
+                    <!-- Основной PDF -->
+                    <div class="methodic-card main-card">
+                        <div class="methodic-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="methodic-content">
+                            <h4>Методические рекомендации</h4>
+                            <p class="methodic-description">Полное руководство по внедрению ИИ в учебный процесс СПО</p>
+                            <div class="methodic-meta">
+                                <span class="meta-item"><i class="fas fa-file-alt"></i> PDF, 45 страниц</span>
+                                <span class="meta-item"><i class="fas fa-download"></i> 5.2 МБ</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1OiJ0tsgTYmQtlBTRHmoC7FmoCNQ2i3V4/view?usp=drive_link" 
+                               target="_blank" class="download-btn">
+                               <i class="fas fa-download"></i> Скачать PDF
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- Галерея скриншотов -->
+                    <div class="screenshots-gallery">
+                        <h5><i class="fas fa-images"></i> Скриншоты с вебинаров</h5>
+                        <div class="screenshots-grid">
+                            <a href="images/webinar-screenshot1.jpg" target="_blank" class="screenshot-item">
+                                <img src="images/webinar-screenshot1-thumb.jpg" alt="Скриншот вебинара 1">
+                            </a>
+                            <a href="images/webinar-screenshot2.jpg" target="_blank" class="screenshot-item">
+                                <img src="images/webinar-screenshot2-thumb.jpg" alt="Скриншот вебинара 2">
+                            </a>
+                            <a href="images/webinar-screenshot3.jpg" target="_blank" class="screenshot-item">
+                                <img src="images/webinar-screenshot3-thumb.jpg" alt="Скриншот вебинара 3">
+                            </a>
+                            <a href="images/webinar-screenshot4.jpg" target="_blank" class="screenshot-item">
+                                <img src="images/webinar-screenshot4-thumb.jpg" alt="Скриншот вебинара 1">
+                            </a>
+                            <a href="images/webinar-screenshot5.jpg" target="_blank" class="screenshot-item">
+                                <img src="images/webinar-screenshot5-thumb.jpg" alt="Скриншот вебинара 2">
+                            </a>
+                            <a href="images/webinar-screenshot6.jpg" target="_blank" class="screenshot-item">
+                                <img src="images/webinar-screenshot6-thumb.jpg" alt="Скриншот вебинара 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Футер (Подвал) -->
+<footer id="contacts" class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Левая колонка: Контакты -->
+            <div class="footer-column contacts-column">
+                <h3><i class="fas fa-map-marker-alt"></i> Люберецкий техникум</h3>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://luberteh.ru/" target="_blank" class="website">
+                            <strong>Официальный сайт:</strong> luberteh.ru
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><strong>Адрес:</strong> г. Люберцы, Московская область</span>
+                    </div>
+                </div>
+                
+                <!-- Соцсети -->
+                <div class="social-section">
+                    <h4><i class="fas fa-share-alt"></i> Мы в соцсетях:</h4>
+                    <div class="social-buttons">
+                        <a href="https://vk.com/luberteh" class="social-btn vk-btn" target="_blank">
+                            <i class="fab fa-vk"></i> ВКонтакте
+                        </a>
+                        <a href="https://t.me/luberteh" class="social-btn tg-btn" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                    <!-- Место для 2 фото -->
+    <div class="practice-photos">
+    <h4><i class="fas fa-camera"></i> Фото с мест практики:</h4>
+    <div class="photos-grid">
+        <!-- Фото 1 -->
+        <div class="photo-item">
+            <img src="images/practice1.jpg" alt="Практика в вертолетостроении" class="practice-img">
+            <div class="photo-caption">Национальный центр вертолётостроения</div>
+        </div>
+        
+        <!-- Фото 2 -->
+        <div class="photo-item">
+            <img src="images/practice2.jpg" alt="Практика в Миграционной службе" class="practice-img">
+            <div class="photo-caption"> Миграционная служба </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            
+          <!-- Правая колонка: Партнеры -->
+<div class="footer-column partners-column">
+    <h3><i class="fas fa-handshake"></i> Места практики студентов:</h3>
+    
+    <!-- Сетка мест практики -->
+    <div class="internship-places">
+        <!-- Вертолетостроение -->
+        <div class="place-item">
+            <div class="place-icon">
+                <i class="fas fa-helicopter"></i>
+            </div>
+            <div class="place-info">
+                <h4>Национальный центр вертолётостроения</h4>
+                <p>им. М. Л. Миля и Н. И. Камова (г. Люберцы)</p>
+                <small>Работа с ПК и IT-системами</small>
+            </div>
+        </div>
+        
+        <!-- Информационные системы -->
+        <div class="place-item">
+            <div class="place-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <div class="place-info">
+                <h4>ЗАО "Научно-производственный центр"</h4>
+                <p>Информационные региональные системы (г. Москва)</p>
+                <small>IT-разработка и поддержка</small>
+            </div>
+        </div>
+        
+        <!-- Государственные учреждения -->
+        <div class="place-item">
+            <div class="place-icon">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="place-info">
+                <h4>Государственные учреждения</h4>
+                <p>Миграционная служба и Мировые судьи</p>
+                <small>Работа с документами и базами данных</small>
+            </div>
+        </div>
+        
+        <!-- Культурные учреждения -->
+        <div class="place-item">
+            <div class="place-icon">
+                <i class="fas fa-book"></i>
+            </div>
+            <div class="place-info">
+                <h4>Культурные учреждения</h4>
+                <p>Библиотека г. Дзержинский</p>
+                <small>Проведение мероприятий и IT-поддержка</small>
+            </div>
+        </div>
+        
+        
+    
+    
+    
+    <!-- Примечание -->
+    <div class="internship-note">
+        <p><i class="fas fa-info-circle"></i> Техникум сотрудничает с предприятиями для организации производственной практики студентов</p>
+    </div>
+</div>
+                
+                
+        
+        <!-- Нижняя часть (оставляем как было) -->
+        <div class="footer-bottom">
+            <p>Проект «ИИ в Люберецком техникуме»</p>
+            <p> Результаты внедрения искусственного интеллекта в учебный процесс</p>
+            <p class="copyright">© 2025 Люберецкий техникум. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- ПОДКЛЮЧЕНИЕ ВСЕХ СКРИПТОВ -->
+    <script src="logo-animation.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
